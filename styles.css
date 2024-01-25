@@ -1,0 +1,152 @@
+:root {
+    --SoftCyan :  hsl(174, 77%, 80%);
+    --StrongCyan : hsl(174, 86%, 45%);
+    --LightGrayishRed :  hsl(14, 92%, 95%);
+    --LightRed : hsl(15, 100%, 70%);
+    --PaleBlue :   hsl(226, 100%, 87%);
+
+}
+
+
+
+*{
+    margin: 0;
+}
+.main{
+    min-height: 100vh;
+    background-color:var(--primary-pink) ;
+    position: relative;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+
+
+.back-ground-image{
+    background-image: url('./images/bg-pattern.svg');
+    background-repeat: no-repeat;
+    background-position:left;
+    background-size: cover;
+    min-height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.back-ground-image div{
+  /*   border: solid brown 2px; */
+    margin-bottom: 100px;
+    
+}
+
+
+
+.data-container {
+    padding: 2rem;
+  /*   border: solid brown 2px; */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, .4) ;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translateX(-50%);
+    background-color: aliceblue;
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.child1{
+   /*  border: solid blue 1px; */
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.child2{
+  /*   border: solid blue 1px; */
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.button-child2{
+    padding: .3rem;
+    width: 120px;
+    border-radius: 15px;
+    background-color: rgb(34, 34, 52);
+    color: white;
+}
+
+
+ .section-container{
+   /*  border: solid red 1px; */
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    
+}
+
+
+.inputs-container{
+    font-size: 10px;
+    /* border: solid red 1px; */
+    flex: 1.5;
+    text-align: center;
+   
+}
+
+
+
+.inputs-container .range{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 20px;
+   
+}
+
+
+.inputs-container .button{
+    margin:  0 15px 0 15px;
+    background:none;
+    border: none;
+    cursor: pointer;
+    color: green;
+    font-size: 17px;
+   
+}
+
+.hidden{
+    display: none;
+}
+
+.percentage{
+    color: red;
+}
+
+
+@media screen and (max-width :600px) {
+    .data-container {
+        width: 70%;
+        height: 350px;
+    }
+
+    .child2{
+        /*   border: solid blue 1px; */
+          height: 40%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+      }
+      .child2 div p{
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      
+}
